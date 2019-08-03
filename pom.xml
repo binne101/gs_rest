@@ -12,7 +12,7 @@
 
     <modules>
         <module>../gs_rest_hateoas</module>
-        <module>../gs_itest</module>
+        <module>gs_itest</module>
     </modules>
 
 
