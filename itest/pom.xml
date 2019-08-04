@@ -71,10 +71,10 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
                 <configuration>
-                    <mainClass>nl.pdptst.rest_hateoas.RestHateoasApplication</mainClass>
+                    <mainClass>nl.pdptst.hateoas.RestHateoasApplication</mainClass>
                     <!--<mainClass>com.consol.citrus.samples.todolist.TodoApplication</mainClass>-->
                     <useTestClasspath>false</useTestClasspath>
-                    <classesDirectory>../../gs_rest_hateoas/target/classes</classesDirectory>
+                    <classesDirectory>../hateoas/target/classes</classesDirectory>
                 </configuration>
             </plugin>
         </plugins>
@@ -83,11 +83,11 @@
     <dependencies>
         <!-- todo zonder onderstaande dependency krijg je de error
         Could not figure out if the application has started: Failed to connect to MBean server at port 9001:-->
-        <dependency>
-            <groupId>com.consol.citrus.samples</groupId>
-            <artifactId>citrus-sample-todo</artifactId>
-            <version>2.8.0</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.consol.citrus.samples</groupId>-->
+            <!--<artifactId>citrus-sample-todo</artifactId>-->
+            <!--<version>2.8.0</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>nl.pdptst</groupId>
