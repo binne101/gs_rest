@@ -16,11 +16,11 @@
 
     <modules>
         <module>hateoas</module>
-        <module>itest</module>
+        <!--<module>itest</module>-->
     </modules>
 
     <scm>
-        <connection>scm:git:https://github.com/binne101/gs_rest_hateoas.git</connection>
+        <connection>scm:git:https://github.com/binne101/gs_rest.git</connection>
 
 
         <tag>gs_rest-1.0</tag>
@@ -39,5 +39,40 @@
         </snapshotRepository>
     </distributionManagement>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nxrm3-maven-plugin</artifactId>
+                <version>1.0.2</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <nexusUrl>http://localhost:8082</nexusUrl>
+
+                    <!-- The server "id" element from settings to use authentication from settings.xml-->
+                    <serverId>local-nexus</serverId>
+
+                    <!-- Which repository to deploy to -->
+                    <repository>maven-releases</repository>
+
+                    <!-- Skip the staging deploy mojo -->
+                    <skipNexusStagingDeployMojo>false</skipNexusStagingDeployMojo>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                    <username>binne101</username>
+                    <password>Fokke102</password>
+                </configuration>
+
+            </plugin>
+
+        </plugins>
+    </build>
 
 </project>
