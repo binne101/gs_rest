@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>gs_rest</artifactId>
         <groupId>nl.pdptst</groupId>
-        <version>1.0</version>
+        <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -17,25 +15,7 @@
         <java.version>1.8</java.version>
     </properties>
 
-    <scm>
-        <connection>scm:git:https://github.com/binne101/gs_rest_hateoas.git</connection>
 
-
-        <tag>HEAD</tag>
-    </scm>
-
-    <distributionManagement>
-        <repository>
-            <id>local-nexus</id>
-            <name>Releases</name>
-            <url>http://localhost:8082/repository/maven-releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>local-nexus</id>
-            <name>Snapshot</name>
-            <url>http://localhost:8082/repository/maven-snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
 
     <dependencies>
         <dependency>
@@ -96,4 +76,8 @@
     </build>
 
 
+
+  <scm>
+    <tag>gs_rest-1.0</tag>
+  </scm>
 </project>

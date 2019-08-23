@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -20,6 +18,26 @@
         <module>hateoas</module>
         <module>itest</module>
     </modules>
+
+    <scm>
+        <connection>scm:git:https://github.com/binne101/gs_rest_hateoas.git</connection>
+
+
+        <tag>gs_rest-1.0</tag>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>local-nexus</id>
+            <name>Releases</name>
+            <url>http://localhost:8082/repository/maven-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>local-nexus</id>
+            <name>Snapshot</name>
+            <url>http://localhost:8082/repository/maven-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 
 </project>
