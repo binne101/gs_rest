@@ -16,13 +16,10 @@
 
     <modules>
         <module>hateoas</module>
-        <!--<module>itest</module>-->
     </modules>
 
     <scm>
         <connection>scm:git:https://github.com/binne101/gs_rest.git</connection>
-
-
         <tag>gs_rest-1.0</tag>
     </scm>
 
@@ -32,12 +29,23 @@
             <name>Releases</name>
             <url>http://localhost:8082/repository/maven-releases</url>
         </repository>
+
         <snapshotRepository>
             <id>local-nexus</id>
             <name>Snapshot</name>
             <url>http://localhost:8082/repository/maven-snapshots</url>
         </snapshotRepository>
     </distributionManagement>
+
+    <profiles>
+        <profile>
+            <id>ci</id>
+            <modules>
+                <module>hateoas</module>
+                <module>itest</module>
+            </modules>
+        </profile>
+    </profiles>
 
     <build>
         <plugins>
