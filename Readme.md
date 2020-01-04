@@ -1,10 +1,10 @@
 Doing:
+- 2de test of ik dit in trello krijg via een commit?
 - Trello account + integratie opzetten + test of ik dit in trello krijg + pull request
 - PDP-7: Implementatie/bekijken van web-ui. Heb de console nog niet aan de praat. server.port=8090 in com
 Er is een sample project die werkt op C/Projects/pdp/spring-boot-sample-togglz oid
 Dit is een goed voorbeeld voor simpele configuratie /cygdrive/c/Projects/pdp/togglz-samples/togglz-samples/spring-boot-hello-world
 Wellicht hoef ik alleen de spring-boot-starter-web toe te voegen!
-
 
 
 TODO:
