@@ -31,7 +31,7 @@ public class GreetingController {
     @RequestMapping("/greeting")
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
         if (switchEnabled){
-            name = "switch ";
+            name = "switch is enabled in properties file";
         }
         return new Greeting(counter.incrementAndGet(),
                 String.format(template, name));
