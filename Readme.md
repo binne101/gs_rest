@@ -1,4 +1,5 @@
 Doing:
+-   test git push 
 
 TODO:
 - Overhevelen van oude readme.md (https://github.com/binne101/gs_rest_hateoas/blob/master/README.md) of hier de juiste informatie uithalen 
