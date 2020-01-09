@@ -1,5 +1,5 @@
 Doing:
--   test git push 
+
 
 TODO:
 - Overhevelen van oude readme.md (https://github.com/binne101/gs_rest_hateoas/blob/master/README.md) of hier de juiste informatie uithalen 
@@ -15,6 +15,7 @@ Lezen https://www.togglz.org/documentation/admin-console.html
 - PDP-?: Exclude application.properties from git code analysis (krijg nu eeen warning de de properties niet worden gebruikt bij de git commit).
                                                    
 Done:
+-   test git push 
 - 2de test of ik dit in trello krijg via een commit?
 - Trello account + integratie opzetten + test of ik dit in trello krijg + pull request
 - PDP-7: GreetingController.java werkend maken. De feature manager is geinject. 
