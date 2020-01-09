@@ -89,6 +89,7 @@
             <!--<version>2.8.0</version>-->
         <!--</dependency>-->
 
+
         <dependency>
             <groupId>nl.pdptst</groupId>
             <artifactId>gs_rest_hateoas</artifactId>
