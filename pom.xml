@@ -18,6 +18,10 @@
         <module>hateoas</module>
     </modules>
 
+    <properties>
+        <project.scm.id>my-scm-server</project.scm.id>
+    </properties>
+
     <scm>
         <connection>scm:git:https://github.com/binne101/gs_rest.git</connection>
         <tag>v1.2</tag>
