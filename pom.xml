@@ -81,8 +81,8 @@
                 <version>2.5.3</version>
                 <configuration>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
-                    <username>binne101</username>
-                    <password>Fokke102</password>
+<!--                    <username>binne101</username>-->
+<!--                    <password>Fokke102</password>-->
                 </configuration>
 
             </plugin>
