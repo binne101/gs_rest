@@ -10,7 +10,7 @@
 
     <groupId>nl.pdptst</groupId>
     <artifactId>gs_rest</artifactId>
-    <version>1.3-SNAPSHOT</version>
+    <version>1.3</version>
 
     <packaging>pom</packaging>
 
@@ -24,7 +24,8 @@
 
     <scm>
         <connection>scm:git:https://github.com/binne101/gs_rest.git</connection>
-    </scm>
+      <tag>v1.3</tag>
+  </scm>
 
     <distributionManagement>
         <repository>
