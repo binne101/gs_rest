@@ -20,8 +20,7 @@
 
     <scm>
         <connection>scm:git:https://github.com/binne101/gs_rest.git</connection>
-      <tag>HEAD</tag>
-  </scm>
+    </scm>
 
     <distributionManagement>
         <repository>
@@ -81,10 +80,7 @@
                 <version>2.5.3</version>
                 <configuration>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
-<!--                    <username>binne101</username>-->
-<!--                    <password>Fokke102</password>-->
                 </configuration>
-
             </plugin>
 
         </plugins>
