@@ -20,8 +20,7 @@
 
     <scm>
         <connection>scm:git:https://github.com/binne101/gs_rest.git</connection>
-      <tag>HEAD</tag>
-  </scm>
+    </scm>
 
     <distributionManagement>
         <repository>
