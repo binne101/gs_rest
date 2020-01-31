@@ -10,7 +10,7 @@
 
     <groupId>nl.pdptst</groupId>
     <artifactId>gs_rest</artifactId>
-    <version>1.27</version>
+    <version>1.27-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
