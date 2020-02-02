@@ -58,19 +58,6 @@
             <version>2.6.1.Final</version>
         </dependency>
 
-        <!-- Togglz Admin Console (optional) -->
-        <dependency>
-            <groupId>org.togglz</groupId>
-            <artifactId>togglz-console</artifactId>
-            <version>2.6.1.Final</version>
-        </dependency>
-
-        <!-- Togglz for Servlet environments (mandatory) -->
-        <dependency>
-            <groupId>org.togglz</groupId>
-            <artifactId>togglz-servlet</artifactId>
-            <version>2.6.1.Final</version>
-        </dependency>
     </dependencies>
 
     <build>
