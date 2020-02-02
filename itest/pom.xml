@@ -79,6 +79,7 @@
     </build>
 
     <dependencies>
+
         <!-- Logging -->
         <dependency>
             <groupId>org.slf4j</groupId>
