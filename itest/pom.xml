@@ -5,7 +5,7 @@
     <parent>
         <artifactId>gs_rest</artifactId>
         <groupId>nl.pdptst</groupId>
-        <version>1.21-SNAPSHOT</version>
+        <version>1.2-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -13,9 +13,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <!-- todo parent version? -->
         <spring.boot.version>2.1.5.RELEASE</spring.boot.version>
-        <!-- 2.0.3.RELEASE-->
         <slf4j.version>1.7.25</slf4j.version>
         <junit.version>4.12</junit.version>
         <cucumber.version>3.0.2</cucumber.version>
@@ -149,6 +147,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
     <profiles>
         <profile>
             <id>rest-hateoas-app-embedded</id>
@@ -182,11 +181,7 @@
                     </plugin>
                 </plugins>
             </build>
-
         </profile>
-
     </profiles>
-
-
 
 </project>
