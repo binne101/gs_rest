@@ -3,7 +3,6 @@ Sample Project for demo purposes:
 Introduction:
 
 The gs_rest project suffices as a sample project for usage in CI.
-
 The project focusses on CI tooling which is present in the cloud (jenkins, sonar, nexus).
 
 Why CI?
@@ -15,15 +14,20 @@ Example demo preperation: Unexpected error running mvn -Pci -Dembedded verify
 Azure setup (vm's) 
 - jenkins, nexus (admin, Te@*****)
 - sonar (admin, ad***)
-- github scm
+
+SCM
+- github 
 
 Project Contains:
 - Maven multi-module (hateoas, itest)
 - Integrationtest (sample report from workspace)
 - sonar report
+- Jenkinsfile (still on jenkins -> gitops)
 - mutation testing
 - Feature togglz (demo locally)
-- Jenkinsfile
+-- working with multiple teams (timing) + multiple branches/versions
+
+
  
 Nice to have (see trello):
 - sonar (feature test)
