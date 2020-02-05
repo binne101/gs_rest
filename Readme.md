@@ -1,24 +1,44 @@
-Doing:
+Sample Project for demo purposes:
 
+Introduction:
 
-TODO:
-- Overhevelen van oude readme.md (https://github.com/binne101/gs_rest_hateoas/blob/master/README.md) of hier de juiste informatie uithalen 
-Lezen https://www.togglz.org/documentation/admin-console.html 
-- Lezen https://martinfowler.com/bliki/FeatureToggle.html 
-- PDP-7: Het runtime aan/uitzetten van features.
-- PDP-7: Wat zijn alle opties?  (website doorlezen)
-- PDP-7: Optie van mail op gezette tijden tot de feature weg is. 
-- PDP-7: Strategy provider (b.v. release datum, serverip, clientip, gradualactivation, etc)
-- PDP-?: Swagger
-- PDP-7: Enumbase features, in code een enum waarmee je je features maakt zie https://www.togglz.org/documentation/spring-boot-starter.html
-- PDP-?: mvnDebug werkt niet
-- PDP-?: Exclude application.properties from git code analysis (krijg nu eeen warning de de properties niet worden gebruikt bij de git commit).
-                                                   
-Done:
--   test git push 
-- 2de test of ik dit in trello krijg via een commit?
-- Trello account + integratie opzetten + test of ik dit in trello krijg + pull request
-- PDP-7: GreetingController.java werkend maken. De feature manager is geinject. 
-- PDP-7: Feature toggle aan readme.md toevoegen
+The gs_rest project suffices as a sample project for usage in CI.
 
+The project focusses on CI tooling which is present in the cloud (jenkins, sonar, nexus).
+
+Why CI?
+
+Example demo preperation: Unexpected error running mvn -Pci -Dembedded verify
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.1.5.RELEASE:start (pre-integration-test) on project itest: Could not contact Spring Boot application: Failed to retrieve RMIServer stub: javax.naming.CommunicationException [Root exception is java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+[ERROR] 	java.io.EOFException]
+
+Azure setup (vm's) 
+- jenkins, nexus (admin, Te@*****)
+- sonar (admin, ad***)
+- github scm
+
+Project Contains:
+- Maven multi-module (hateoas, itest)
+- Integrationtest (sample report from workspace)
+- sonar report
+- mutation testing
+- Feature togglz (demo locally)
+- Jenkinsfile
  
+Nice to have (see trello):
+- sonar (feature test)
+- sonar (SonarQube Stash (BitBucket) plugin)
+- togglz with date
+- feign client -> @EnableEurekaServer
+
+Commands:
+- mvn -Pci -Dembedded verify
+
+- mvn sonar:sonar \
+  -Dsonar.host.url=http://sonarvm.westeurope.cloudapp.azure.com \
+  -Dsonar.login=7edc597c6bbff50f9ae0aa1558e9dd3ab206dfde
+
+Demo jenkins pipeline for sonar check  
+https://jenkinssec01.northeurope.cloudapp.azure.com/job/demo%20jenkins2sonar%20pipeline  
+  
+- mvn org.pitest:pitest-maven:mutationCoverage

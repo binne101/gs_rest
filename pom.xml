@@ -62,24 +62,7 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nxrm3-maven-plugin</artifactId>
-                <version>1.0.2</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <nexusUrl>http://localhost:8082</nexusUrl>
 
-                    <!-- The server "id" element from settings to use authentication from settings.xml-->
-                    <serverId>local-nexus</serverId>
-
-                    <!-- Which repository to deploy to -->
-                    <repository>maven-releases</repository>
-
-                    <!-- Skip the staging deploy mojo -->
-                    <skipNexusStagingDeployMojo>false</skipNexusStagingDeployMojo>
-                </configuration>
-            </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -89,6 +72,12 @@
                     <tagNameFormat>v@{project.version}</tagNameFormat>
 
                 </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-maven</artifactId>
+                <version>1.4.11</version>
             </plugin>
 
         </plugins>

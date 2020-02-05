@@ -34,7 +34,19 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-
+            <plugin>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-maven</artifactId>
+                <version>1.4.11</version>
+                <configuration>
+                    <targetClasses>
+                        <param>nl.pdptst.hateoas.mutationtest.*</param>
+                    </targetClasses>
+                    <targetTests>
+                        <param>nl.pdptst.hateoas.mutationtest.*</param>
+                    </targetTests>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
