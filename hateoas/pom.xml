@@ -60,6 +60,9 @@
                     </dependency>
                 </dependencies>
                 <configuration>
+                    <outputFormats>
+                        <outputFormat>XML</outputFormat>
+                    </outputFormats>
                     <targetClasses>
                         <param>nl.pdptst.hateoas.mutationtest.*</param>
                     </targetClasses>
