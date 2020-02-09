@@ -34,6 +34,7 @@ Nice to have (see trello):
 - sonar (SonarQube Stash (BitBucket) plugin)
 - togglz with date
 - feign client -> @EnableEurekaServer
+- junit5
 
 Commands:
 - mvn -Pci -Dembedded verify
